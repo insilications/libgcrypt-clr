@@ -41,7 +41,7 @@
 
 #if _GCRY_GCC_VERSION >= 40700 /* 4.7 */
 # define FORCE_FUNC_FRAME_POINTER \
-	__attribute__ ((optimize("no-omit-frame-pointer")))
+	__attribute__ ((optimize("O3","no-omit-frame-pointer")))
 #else
 # define FORCE_FUNC_FRAME_POINTER
 #endif
