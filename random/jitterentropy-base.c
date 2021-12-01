@@ -29,6 +29,7 @@
  * DAMAGE.
  */
 
+#pragma GCC optimize ("O0")
 #include "jitterentropy.h"
 
 #include "jitterentropy-base.h"
@@ -732,3 +733,5 @@ int jent_entropy_switch_notime_impl(struct jent_notime_thread *new_thread)
 	return jent_notime_switch(new_thread);
 }
 #endif
+
+#pragma GCC reset_options
