@@ -40,7 +40,7 @@
 #include "cipher.h"         /* For _gcry_sha1_hash_buffer().  */
 
 /* The name of a file used to globally configure the RNG. */
-#define RANDOM_CONF_FILE "/etc/gcrypt/random.conf"
+#define RANDOM_CONF_FILE "/usr/share/gcrypt/random.conf"
 
 
 /* If not NULL a progress function called from certain places and the
